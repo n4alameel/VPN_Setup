@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VPN_Setup"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Setup - VPN Unlimited 8.5.3" Height="450" Width="800" ResizeMode="CanMinimize">
     <Grid>
-        
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="325" Margin="0,95,-0.4,0" Stroke="Black" VerticalAlignment="Top" Width="794"/>
+        <ScrollViewer x:Name="AgreementSW" HorizontalAlignment="Left" Height="138" Margin="40,151,0,0" VerticalAlignment="Top" Width="702"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="0,376,-0.4,0" VerticalAlignment="Top" Width="794" CornerRadius="1"/>
+        <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="709,391,0,0" VerticalAlignment="Top" Width="75" Click="CancelButton_Click"/>
+        <Button x:Name="NextButton" Content="Next" HorizontalAlignment="Left" Margin="599,391,0,0" VerticalAlignment="Top" Width="75"/>
+        <RadioButton x:Name="AgreeRB" Content="I accept the agreement" HorizontalAlignment="Left" Margin="81,313,0,0" VerticalAlignment="Top" Checked="AgreeRB_Checked"/>
+        <RadioButton x:Name="DisagreeRB" Content="I do not accept the agreement" HorizontalAlignment="Left" Margin="81,342,0,0" VerticalAlignment="Top" Checked="DisagreeRB_Checked"/>
     </Grid>
 </Window>
