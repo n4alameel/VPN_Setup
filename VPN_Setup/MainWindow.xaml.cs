@@ -57,5 +57,13 @@ namespace VPN_Setup
                 this.Close();
             }
         }
+
+        private void NextButton_Click(object sender, RoutedEventArgs e)
+        {
+            DestinationLocationWindow window = new DestinationLocationWindow();
+            window.Owner = this;
+            window.Show();
+            this.Hide();
+        }
     }
 }
