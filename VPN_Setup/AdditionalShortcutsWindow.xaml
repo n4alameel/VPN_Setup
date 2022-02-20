@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VPN_Setup"
         mc:Ignorable="d"
-        Title="AdditionalShortcutsWindow" Height="450" Width="800">
+        Title="AdditionalShortcutsWindow" Height="450" Width="800" Closing="Window_Closing">
     <Grid>
-        
+        <CheckBox Content="Create a desktop shortcut" HorizontalAlignment="Left" Margin="89,163,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="709,391,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.589,0.99" Click="CancelButton_Click"/>
+        <Button x:Name="NextButton" Content="Next" HorizontalAlignment="Left" Margin="610,391,0,0" VerticalAlignment="Top" Width="75" Click="NextButton_Click"/>
+        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="530,391,0,0" VerticalAlignment="Top" Width="75" Click="BackButton_Click"/>
+
     </Grid>
 </Window>

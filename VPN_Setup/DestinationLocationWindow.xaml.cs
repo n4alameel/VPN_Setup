@@ -47,7 +47,7 @@ namespace VPN_Setup
             }
             else
             {
-                this.Close();
+                
             }
         }
 

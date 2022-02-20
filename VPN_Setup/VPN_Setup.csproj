@@ -58,6 +58,15 @@
     <Compile Include="AdditionalShortcutsWindow.xaml.cs">
       <DependentUpon>AdditionalShortcutsWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FinishWindow.xaml.cs">
+      <DependentUpon>FinishWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InstallingWindow.xaml.cs">
+      <DependentUpon>InstallingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReadyToInstallWindow.xaml.cs">
+      <DependentUpon>ReadyToInstallWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ShortcutsWindow.xaml.cs">
       <DependentUpon>ShortcutsWindow.xaml</DependentUpon>
     </Compile>
@@ -66,6 +75,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DestinationLocationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FinishWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InstallingWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -84,6 +101,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ReadyToInstallWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ShortcutsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

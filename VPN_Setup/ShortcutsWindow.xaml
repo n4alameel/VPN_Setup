@@ -10,7 +10,7 @@
         <TextBox x:Name="ShortcutTB" HorizontalAlignment="Left" Height="32" Margin="82,226,0,0" TextWrapping="Wrap" Text="VPN Unlimited" VerticalAlignment="Top" Width="435"/>
         <Button x:Name="BrowseButton" Content="Browse..." HorizontalAlignment="Left" Margin="594,239,0,0" VerticalAlignment="Top" Width="75" Click="BrowseButton_Click"/>
         <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="709,391,0,0" VerticalAlignment="Top" Width="75" Click="CancelButton_Click"/>
-        <Button x:Name="NextButton" Content="Next" HorizontalAlignment="Left" Margin="606,391,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="NextButton" Content="Next" HorizontalAlignment="Left" Margin="606,391,0,0" VerticalAlignment="Top" Width="75" Click="NextButton_Click"/>
         <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="526,391,0,0" VerticalAlignment="Top" Width="75" Click="BackButton_Click"/>
 
     </Grid>

@@ -15,25 +15,19 @@ using System.Windows.Shapes;
 namespace VPN_Setup
 {
     /// <summary>
-    /// Логика взаимодействия для ShortcutsWindow.xaml
+    /// Логика взаимодействия для ReadyToInstallWindow.xaml
     /// </summary>
-    public partial class ShortcutsWindow : Window
+    public partial class ReadyToInstallWindow : Window
     {
-        public ShortcutsWindow()
+        public ReadyToInstallWindow()
         {
             InitializeComponent();
         }
 
-        private void BrowseButton_Click(object sender, RoutedEventArgs e)
+        private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
-
-            Nullable<bool> result = dlg.ShowDialog();
-            if (result == true)
-            {
-                string filename = dlg.FileName;
-                ShortcutTB.Text = filename;
-            }
+            this.Owner.Show();
+            this.Close();
         }
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)
@@ -46,30 +40,24 @@ namespace VPN_Setup
             }
             else
             {
-                
+
             }
         }
 
-        private void BackButton_Click(object sender, RoutedEventArgs e)
+        private void InstallButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Owner.Show();
-            this.Close();
+            InstallingWindow installingWindow = new InstallingWindow();
+            installingWindow.Owner = this;
+            installingWindow.Show();
+            this.Hide();
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            if (this.Owner.IsActive == false)
+            if (this.Owner.IsActive == false )
             {
                 App.Current.Shutdown();
             }
-        }
-
-        private void NextButton_Click(object sender, RoutedEventArgs e)
-        {
-            AdditionalShortcutsWindow additionalShortcutsWindow = new AdditionalShortcutsWindow();
-            additionalShortcutsWindow.Owner = this;
-            additionalShortcutsWindow.Show();
-            this.Hide();
         }
     }
 }

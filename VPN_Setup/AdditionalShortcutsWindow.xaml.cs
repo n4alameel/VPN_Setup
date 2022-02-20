@@ -23,5 +23,43 @@ namespace VPN_Setup
         {
             InitializeComponent();
         }
+
+        
+
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            string text = "Setup is not complete. If you exit now< the program will not be installed. \n \n You may run Setup again at another time to complete the installation. \n \n Exit Setup?";
+            MessageBoxResult result = MessageBox.Show(text, "Exit Setup", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                App.Current.Shutdown();
+            }
+            else
+            {
+
+            }
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Owner.Show();
+            this.Close();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (this.Owner.IsActive == false)
+            {
+                App.Current.Shutdown();
+            }
+        }
+
+        private void NextButton_Click(object sender, RoutedEventArgs e)
+        {
+            ReadyToInstallWindow readyToInstallWindow = new ReadyToInstallWindow();
+            readyToInstallWindow.Owner = this;
+            readyToInstallWindow.Show();
+            this.Hide();
+        }
     }
 }
