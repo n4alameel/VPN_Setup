@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:VPN_Setup"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+     
     </Application.Resources>
 </Application>

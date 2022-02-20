@@ -5,10 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VPN_Setup"
         mc:Ignorable="d"
-        Title="FinishWindow" Height="450" Width="800">
+        Title="Setup - VPN Unlimited 8.5.3" Icon="C:\Users\Мария\source\repos\VPN_Setup\VPN_Setup\Logo.png" Height="450" Width="800" ResizeMode="CanMinimize">
     <Grid>
-        <CheckBox Content="Launch VPN Unlimited" HorizontalAlignment="Left" Margin="376,246,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="FinishButton" Content="Finish" HorizontalAlignment="Left" Margin="709,391,0,0" VerticalAlignment="Top" Width="75" Click="FinishButton_Click"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="70" Margin="0,350,-0.4,0" Stroke="Black" VerticalAlignment="Top" Width="794"/>
+
+        <CheckBox x:Name="LaunchCB" Content="Launch VPN Unlimited" HorizontalAlignment="Left" Margin="376,246,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="FinishButton" Content="Finish" HorizontalAlignment="Left" Margin="610,380,0,0" VerticalAlignment="Top" Width="75" Click="FinishButton_Click"/>
+        <Image Source ="C:\Users\Мария\source\repos\VPN_Setup\VPN_Setup\Logo.png " HorizontalAlignment="Left" Height="202" VerticalAlignment="Top" Width="185" Margin="10,37,0,0"/>
+        <Label Content="VPN &#xD;&#xA;Unlimited" HorizontalAlignment="Left" Margin="30,226,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" Foreground="LightBlue" VerticalContentAlignment ="Center" HorizontalContentAlignment="Center" Height="105" Width="193"/>
+        <Label x:Name="CompletingLabel" Content="Completing the VPN Unlimited Setup Wizard" HorizontalAlignment="Left" Margin="252,20,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <Label Content="Setup has finished installing VPN Unlimited on your computer. The application may be &#xD;&#xA;launched by selecting the installed shrtcuts.&#xA;&#xA;Click Finish to exit Setup." HorizontalAlignment="Left" Margin="252,92,0,0" VerticalAlignment="Top" Height="76" Width="496"/>
 
     </Grid>
 </Window>

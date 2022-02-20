@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VPN_Setup"
         mc:Ignorable="d"
-        Title="Setup - VPN Unlimited 8.5.3" Height="450" Width="800" ResizeMode="CanMinimize">
+        Title="Setup - VPN Unlimited 8.5.3" Icon="C:\Users\Мария\source\repos\VPN_Setup\VPN_Setup\Logo.png" Height="450" Width="800" ResizeMode="CanMinimize">
     <Grid>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="325" Margin="0,95,-0.4,0" Stroke="Black" VerticalAlignment="Top" Width="794"/>
         <ScrollViewer x:Name="AgreementSW" HorizontalAlignment="Left" Height="138" Margin="40,151,0,0" VerticalAlignment="Top" Width="702"/>
@@ -14,5 +14,9 @@
         <Button x:Name="NextButton" Content="Next" HorizontalAlignment="Left" Margin="599,391,0,0" VerticalAlignment="Top" Width="75" Click="NextButton_Click"/>
         <RadioButton x:Name="AgreeRB" Content="I accept the agreement" HorizontalAlignment="Left" Margin="81,313,0,0" VerticalAlignment="Top" Checked="AgreeRB_Checked"/>
         <RadioButton x:Name="DisagreeRB" Content="I do not accept the agreement" HorizontalAlignment="Left" Margin="81,342,0,0" VerticalAlignment="Top" Checked="DisagreeRB_Checked"/>
+        <Label x:Name="PleaseLabel" Content="Please read the following License Agreement. You must accept the terms of this agreement before continuing with the installation." HorizontalAlignment="Left" Margin="49,106,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LicenseLabel" Content="License agreement" HorizontalAlignment="Left" Margin="26,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="FollowingLabel" Content="Please read the following important information before continuing" HorizontalAlignment="Left" Margin="60,50,0,0" VerticalAlignment="Top"/>
+        <Image Source="C:\Users\Мария\source\repos\VPN_Setup\VPN_Setup\Logo.png" HorizontalAlignment="Left" Height="100" Margin="694,0,-0.4,0" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </Window>

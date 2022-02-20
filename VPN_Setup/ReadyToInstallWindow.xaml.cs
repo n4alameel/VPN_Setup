@@ -22,6 +22,7 @@ namespace VPN_Setup
         public ReadyToInstallWindow()
         {
             InitializeComponent();
+            SettingsSV.Content = "Destination location: \n \t C:/Program Files(x86)/VPN Unlimited \n \n Start Menu folder: \n \t VPN Unlimited \n \n Additional tasks: \n \t Additional shortcuts: \n \t \t Create desktop shortcut";
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)

@@ -5,13 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VPN_Setup"
         mc:Ignorable="d"
-        Title="InstallingWindow" Height="450" Width="800" ContentRendered="Window_ContentRendered" Closing="Window_Closing">
+        Title="Setup - VPN Unlimited 8.5.3" Icon="C:\Users\Мария\source\repos\VPN_Setup\VPN_Setup\Logo.png" Height="450" Width="800" ResizeMode="CanMinimize" ContentRendered="Window_ContentRendered" Closing="Window_Closing">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ProgressBar x:Name="progbar" HorizontalAlignment="Left" Height="39" Margin="98,249,0,0" VerticalAlignment="Top" Width="610"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="326" Margin="0,94,-0.4,0" Stroke="Black" VerticalAlignment="Top" Width="794"/>
+
+        <ProgressBar x:Name="progbar" HorizontalAlignment="Left" Height="39" Margin="63,181,0,0" VerticalAlignment="Top" Width="684"/>
         <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="708,392,0,0" VerticalAlignment="Top" Width="75" Click="CancelButton_Click"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="0,374,-0.4,0" VerticalAlignment="Top" Width="794"/>
+        <Label x:Name="ExtractingFilesLabel" Content="Extracting files...&#xD;&#xA;C:\ProgramFiles(x86)\VPN Unlimited\" HorizontalAlignment="Left" Margin="83,123,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="InstallingLabel" Content="Installing" HorizontalAlignment="Left" Margin="28,21,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Please wait while Setup installs VPN Unlimited on your computer" HorizontalAlignment="Left" Margin="38,52,0,0" VerticalAlignment="Top"/>
+        <Image Source ="C:\Users\Мария\source\repos\VPN_Setup\VPN_Setup\Logo.png" HorizontalAlignment="Left" Height="100" Margin="694,0,-0.4,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>

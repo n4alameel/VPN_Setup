@@ -24,11 +24,13 @@ namespace VPN_Setup
         public MainWindow()
         {
             InitializeComponent();
+            
             NextButton.IsEnabled = false;
-            DisagreeRB.IsChecked = true;
+            DisagreeRB.IsChecked = true; 
             StreamReader sr = new StreamReader("Agreement.txt");
             AgreementSW.Content = sr.ReadToEnd();
             sr.Close();
+            
         }
 
         private void AgreeRB_Checked(object sender, RoutedEventArgs e)

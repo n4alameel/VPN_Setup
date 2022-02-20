@@ -33,6 +33,11 @@ namespace VPN_Setup
                 progbar.Value++;
                 Thread.Sleep(100);
             }
+            
+            FinishWindow finishWindow = new FinishWindow();
+            finishWindow.Owner = this;
+            this.Hide();
+            finishWindow.Show();
 
         }
 

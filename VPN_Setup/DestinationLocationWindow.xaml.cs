@@ -28,13 +28,15 @@ namespace VPN_Setup
         {
             
             Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
-
+            
             Nullable<bool> result = dlg.ShowDialog();
             if (result == true)
             {
                 string filename = dlg.FileName;
                 LocationTB.Text = filename;
             }
+            
+
         }
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)

@@ -22,6 +22,7 @@ namespace VPN_Setup
         public AdditionalShortcutsWindow()
         {
             InitializeComponent();
+            CreateCB.IsChecked = true;
         }
 
         

@@ -22,6 +22,7 @@ namespace VPN_Setup
         public FinishWindow()
         {
             InitializeComponent();
+            LaunchCB.IsChecked = true;
         }
 
         

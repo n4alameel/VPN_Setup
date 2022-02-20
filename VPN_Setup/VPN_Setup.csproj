@@ -139,5 +139,14 @@
   <ItemGroup>
     <Resource Include="Agreement.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SelectFolder.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

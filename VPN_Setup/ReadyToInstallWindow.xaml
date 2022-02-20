@@ -5,12 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VPN_Setup"
         mc:Ignorable="d"
-        Title="ReadyToInstallWindow" Height="450" Width="800" Closing="Window_Closing">
+        Title="Setup - VPN Unlimited 8.5.3" Icon="C:\Users\Мария\source\repos\VPN_Setup\VPN_Setup\Logo.png" Height="450" Width="800" ResizeMode="CanMinimize" Closing="Window_Closing">
     <Grid>
-        <ScrollViewer x:Name="SettingsSV" HorizontalAlignment="Left" Height="231" Margin="54,87,0,0" VerticalAlignment="Top" Width="701"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="329" Margin="0,91,-0.4,0" Stroke="Black" VerticalAlignment="Top" Width="794"/>
+
+        <ScrollViewer x:Name="SettingsSV" HorizontalAlignment="Left" Height="231" Margin="55,129,0,0" VerticalAlignment="Top" Width="701" HorizontalScrollBarVisibility="Visible"/>
         <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="709,391,0,0" VerticalAlignment="Top" Width="75" Click="CancelButton_Click"/>
         <Button x:Name="InstallButton" Content="Install" HorizontalAlignment="Left" Margin="617,391,0,0" VerticalAlignment="Top" Width="75" Click="InstallButton_Click"/>
         <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="537,391,0,0" VerticalAlignment="Top" Width="75" Click="BackButton_Click"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="2" Margin="0,375,-0.4,0" VerticalAlignment="Top" Width="794" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="ClickLabel" Content="Click Install to continue with the installation, or click Back if you want to review or change any settings" HorizontalAlignment="Left" Margin="55,98,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ReaduToInstallLabel" Content="Ready to Install" HorizontalAlignment="Left" Margin="19,19,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="ReadyLabel" Content="Setup is now ready to begin installing VPN Unlimited on your computer" HorizontalAlignment="Left" Margin="45,59,0,0" VerticalAlignment="Top"/>
+        <Image Source ="C:\Users\Мария\source\repos\VPN_Setup\VPN_Setup\Logo.png" HorizontalAlignment="Left" Height="91" Margin="666,0,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>
